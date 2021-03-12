@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/peek_white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ui_face"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="23dp"
+                android:elevation="6dp" />
+
+            <TextView
+                android:id="@+id/tvNameTitle"
+                android:layout_toRightOf="@+id/profilePic"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:layout_alignTop="@+id/profilePic"
+                android:text="David Brown"
+                android:textSize="15.5dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rbStar"
+                android:src="@drawable/rating_star"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_alignLeft="@+id/tvNameTitle"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar2"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar"
+                android:layout_below="@+id/tvNameTitle"/>
+
+            <ImageView
+                android:id="@+id/rbStar3"
+                android:src="@drawable/rating_star"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/rbStar2"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar4"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar3"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar5"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar4"
+                android:layout_below="@+id/tvNameTitle"/>
+
+            <TextView
+                android:id="@+id/tvKm"
+                android:text="1.2"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvRatingWalk"
+                android:layout_below="@+id/rbStar"
+                android:layout_alignLeft="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvKmLabel"
+                android:text="km"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvKm"
+                android:layout_marginLeft="5sp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="37"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/tvKmLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvTimeLabel"
+                android:text="min"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvTime"
+                android:layout_marginLeft="5sp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/ivRatingLabel"
+                android:src="@drawable/money"
+                android:background="@android:color/transparent"
+                android:layout_width="20dp"
+                android:layout_alignBottom="@+id/tvRatingWalk"
+                android:layout_toLeftOf="@+id/tvRatingWalk"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tvRatingWalk"
+                android:text="17.93"
+                android:textSize="18dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:layout_width="wrap_content"
+                android:layout_alignBottom="@+id/tvTime"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnSendRequest"
+                android:textAllCaps="false"
+                android:layout_width="120dp"
+                style="@style/btnMain"
+                android:layout_height="40dp"
+                android:text="Send Request"
+                android:background="@drawable/bg_corner_button"
+                android:layout_below="@+id/profilePic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"/>
+    </RelativeLayout>

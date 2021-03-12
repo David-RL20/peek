@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.Messages">
+
+
+    <ImageView
+        android:src="@drawable/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/navBottom"
+        android:background="@drawable/background_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:id="@+id/ivIconHome"
+                android:src="@drawable/icon_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/ivIconSearch"
+                android:src="@drawable/icon_search"
+                android:layout_width="50dp"
+                android:layout_toRightOf="@+id/ivIconHome"
+                android:layout_toLeftOf="@+id/ivIconDog"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/ivIconDog"
+                android:src="@drawable/icon_dog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/ivIconMessage"
+                android:src="@drawable/icon_message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/ivIconProfile"
+                android:layout_toRightOf="@+id/ivIconDog"/>
+            <ImageView
+                android:id="@+id/ivIconProfile"
+                android:src="@drawable/icon_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

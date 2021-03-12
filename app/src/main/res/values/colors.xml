@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="peek_white">#FFFFFF</color>
+<color name="peek_white_dark">#EBEAED</color>
+<color name="peek_grey_light">#CFCED2</color>
+<color name="peek_grey_dark">#707070</color>
+<color name="peek_normal">#7D95EF</color>
+<color name="peek_dark">#8995C3</color>
+<color name="peek_black">#464452</color>
+<color name="peek_orange">#EC76CC</color>
+</resources>

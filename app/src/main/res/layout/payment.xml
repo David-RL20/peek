@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    tools:openDrawer="end"
+    android:id="@+id/drawer"
+    android:background="@color/peek_normal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_navigation">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ui_face"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="23dp"
+                android:elevation="6dp" />
+
+            <TextView
+                android:id="@+id/tvNameTitle"
+                android:layout_toRightOf="@+id/profilePic"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:layout_marginTop="23dp"
+                android:text="David Brown"
+                android:textSize="15.5dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rbStar"
+                android:src="@drawable/rating_star"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_alignLeft="@+id/tvNameTitle"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar2"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar"
+                android:layout_below="@+id/tvNameTitle"/>
+
+            <ImageView
+                android:id="@+id/rbStar3"
+                android:src="@drawable/rating_star"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/rbStar2"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar4"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar3"
+                android:layout_below="@+id/tvNameTitle"/>
+            <ImageView
+                android:id="@+id/rbStar5"
+                android:src="@drawable/rating_star"
+                android:layout_marginTop="2dp"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_toRightOf="@+id/rbStar4"
+                android:layout_below="@+id/tvNameTitle"/>
+
+            <TextView
+                android:id="@+id/tvKm"
+                android:text="1.2"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvRatingWalk"
+                android:layout_below="@+id/rbStar"
+                android:layout_alignLeft="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvKmLabel"
+                android:text="km"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvKm"
+                android:layout_marginLeft="5sp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="37"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/tvKmLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvTimeLabel"
+                android:text="min"
+                android:textColor="@color/peek_black"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tvTime"
+                android:layout_marginLeft="5sp"
+                android:layout_below="@+id/rbStar"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnNavigationNext"
+                android:gravity="center"
+                android:background="@drawable/navigation_next"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="23dp"
+                android:layout_alignTop="@+id/profilePic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/ivRatingLabel"
+                android:src="@drawable/money"
+                android:background="@android:color/transparent"
+                android:layout_width="20dp"
+                android:layout_alignBottom="@+id/tvRatingWalk"
+                android:layout_toLeftOf="@+id/tvRatingWalk"
+                android:layout_height="20dp"/>
+            <TextView
+                android:text="17.93"
+                android:textSize="18dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:id="@+id/tvRatingWalk"
+                android:layout_width="wrap_content"
+                android:layout_alignBottom="@+id/tvTime"
+                android:layout_alignRight="@+id/btnNavigationNext"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_below="@+id/profilePic"
+                android:id="@+id/ivIconLocation"
+                android:padding="5dp"
+                android:src="@drawable/home_map"
+                android:background="@drawable/circle_background_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/profilePic"
+                android:layout_marginTop="35dp"/>
+            <TextView
+                android:id="@+id/tvTitleLocation"
+                android:text="Pick up location"
+                android:textSize="11dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIconLocation"
+                android:layout_alignTop="@+id/ivIconLocation"
+                android:layout_marginLeft="6.5dp"/>
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:text="Enter your current location"
+                android:textSize="11dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:textColor="@color/peek_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIconLocation"
+                android:layout_alignBottom="@+id/ivIconLocation"
+                android:layout_marginLeft="6.5dp"/>
+
+            <ImageView
+                android:layout_below="@+id/ivIconLocation"
+                android:background="@drawable/rectangle_route"
+                android:layout_marginLeft="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <!--            Destination recently route-->
+            <ImageView
+                android:id="@+id/ivIconDestination"
+                android:padding="5dp"
+                android:src="@drawable/location"
+                android:background="@drawable/circle_background_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/ivIconLocation"
+                android:layout_alignLeft="@+id/profilePic"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/tvTitleDestination"
+                android:text="Final destination"
+                android:textSize="11dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/peek_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIconDestination"
+                android:layout_alignTop="@+id/ivIconDestination"
+                android:layout_marginLeft="6.5dp"/>
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:text="Enter your final destination"
+                android:textSize="11dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:textColor="@color/peek_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIconDestination"
+                android:layout_alignBottom="@+id/ivIconDestination"
+                android:layout_marginLeft="6.5dp"/>
+
+            <Button
+                style="@style/btnMain"
+                android:id="@+id/btnConfirmWalker"
+                android:text="CONFIRM DOG WALKER"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_below="@+id/ivIconDestination"
+                android:layout_marginTop="20dp"
+                android:layout_height="45dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

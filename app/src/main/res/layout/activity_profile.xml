@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.Profile">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ui_face_2"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp" />
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:id="@+id/btnGoToWalker"
+        />
+
+    <TextView
+        android:id="@+id/tvNameTitle"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:layout_marginTop="10dp"
+        android:text="David Brown"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/rbStar"
+        android:src="@drawable/rating_star"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/rbStar2"
+        android:layout_below="@+id/tvNameTitle"/>
+    <ImageView
+        android:id="@+id/rbStar2"
+        android:src="@drawable/rating_star"
+        android:layout_marginTop="2dp"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_toLeftOf="@+id/rbStar3"
+        android:layout_below="@+id/tvNameTitle"/>
+
+    <ImageView
+        android:id="@+id/rbStar3"
+        android:src="@drawable/rating_star"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvNameTitle"/>
+    <ImageView
+        android:id="@+id/rbStar4"
+        android:src="@drawable/rating_star"
+        android:layout_marginTop="2dp"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_toRightOf="@+id/rbStar3"
+        android:layout_below="@+id/tvNameTitle"/>
+    <ImageView
+        android:id="@+id/rbStar5"
+        android:src="@drawable/rating_star"
+        android:layout_marginTop="2dp"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_toRightOf="@+id/rbStar4"
+        android:layout_below="@+id/tvNameTitle"/>
+    <ImageView
+        android:id="@+id/ivPhoneIcon"
+        android:src="@drawable/phone"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rbStar"/>
+    <TextView
+        android:id="@+id/tvPhone"
+        android:text="614 200 2019"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/ivPhoneIcon"
+        android:layout_toRightOf="@+id/ivPhoneIcon"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_alignLeft="@id/ivPhoneIcon"
+        android:layout_below="@+id/ivPhoneIcon"
+        android:id="@+id/ivLocationDogWalker"
+        android:src="@drawable/location"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvLocationDogWalker"
+        android:text="Tijuana, BC"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/ivLocationDogWalker"
+        android:layout_toRightOf="@+id/ivPhoneIcon"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_alignLeft="@id/ivPhoneIcon"
+        android:layout_below="@+id/ivLocationDogWalker"
+        android:id="@+id/ivEmailDogWalker"
+        android:src="@drawable/mail"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvEmailOwner"
+        android:text="d.brown@mail.com"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/ivEmailDogWalker"
+        android:layout_toRightOf="@+id/ivEmailDogWalker"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_alignLeft="@id/ivPhoneIcon"
+        android:layout_below="@+id/ivEmailDogWalker"
+        android:id="@+id/ivCardDogWalker"
+        android:src="@drawable/card"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvCardOwner"
+        android:text="1234 4567 8910 1112"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/ivCardDogWalker"
+        android:layout_toRightOf="@+id/ivCardDogWalker"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Nav section-->
+    <RelativeLayout
+        android:id="@+id/navBottom"
+        android:background="@drawable/background_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:id="@+id/ivIconHome"
+                android:src="@drawable/icon_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/ivIconSearch"
+                android:src="@drawable/icon_search"
+                android:layout_width="50dp"
+                android:layout_toRightOf="@+id/ivIconHome"
+                android:layout_toLeftOf="@+id/ivIconDog"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/ivIconDog"
+                android:src="@drawable/icon_dog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/ivIconMessage"
+                android:src="@drawable/icon_message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/ivIconProfile"
+                android:layout_toRightOf="@+id/ivIconDog"/>
+            <ImageView
+                android:id="@+id/ivIconProfile"
+                android:src="@drawable/icon_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

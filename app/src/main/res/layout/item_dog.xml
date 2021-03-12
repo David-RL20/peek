@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivDogProfile"
+        android:src="@drawable/dog_profile"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/tvDogName"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:text="Max"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivDogProfile"
+        android:layout_alignTop="@+id/ivDogProfile"/>
+
+    <TextView
+        android:id="@+id/tvBreedLabel"
+        android:text="Breed:"
+        android:textColor="@color/peek_black"
+        android:textSize="14dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tvDogName"
+        android:layout_alignLeft="@+id/tvDogName"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvBreed"
+        android:text="Husky"
+        android:textColor="@color/peek_grey_dark"
+        android:textSize="14dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/tvBreedLabel"
+        android:layout_alignTop="@+id/tvBreedLabel"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSizeLabel"
+        android:text="Size:"
+        android:textColor="@color/peek_black"
+        android:textSize="14dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tvBreedLabel"
+        android:layout_alignLeft="@+id/tvDogName"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:text="Large"
+        android:textColor="@color/peek_grey_dark"
+        android:textSize="14dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tvSizeLabel"
+        android:layout_alignTop="@+id/tvSizeLabel"
+        android:layout_alignLeft="@+id/tvBreed"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvGenderLabel"
+        android:text="Gender:"
+        android:textColor="@color/peek_black"
+        android:textSize="14dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/tvBreedLabel"
+        android:layout_toRightOf="@+id/tvBreed"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:text="Male"
+        android:textColor="@color/peek_grey_dark"
+        android:textSize="14dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tvGenderLabel"
+        android:layout_alignTop="@+id/tvGenderLabel"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxIsPlayful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSizeLabel"
+        android:layout_marginTop="20dp"
+        android:textIsSelectable="true"
+        android:layout_alignLeft="@+id/ivDogProfile"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvCheckBoxIsPlayful"
+        android:text="Playful"
+        android:textSize="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:layout_alignTop="@+id/checkBoxIsPlayful"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/checkBoxIsPlayful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxIsFriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCheckBoxIsPlayful"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/ivDogProfile"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvCheckBoxIsFriendly"
+        android:text="Well behaved"
+        android:textSize="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:layout_alignTop="@+id/checkBoxIsFriendly"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/checkBoxIsPlayful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/checkBoxIsPeopleFriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@+id/checkBoxIsPlayful"
+        android:layout_toRightOf="@id/tvCheckBoxIsPlayful"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvCheckBoxIsPeopleFriendly"
+        android:text="People friendly"
+        android:textSize="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:layout_alignTop="@+id/checkBoxIsPeopleFriendly"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/checkBoxIsPeopleFriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxVaccines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/checkBoxIsPeopleFriendly"
+        android:layout_toRightOf="@id/tvCheckBoxIsPlayful"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvCheckBoxVaccines"
+        android:text="Vaccines"
+        android:textSize="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/peek_black"
+        android:layout_alignTop="@+id/checkBoxVaccines"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/checkBoxIsPeopleFriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

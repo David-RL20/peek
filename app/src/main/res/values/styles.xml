@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/peek_normal</item>
+        <item name="colorPrimaryDark">@color/peek_dark</item>
+        <item name="colorAccent">@color/peek_black</item>
+    </style>
+
+    <style name="btnMain">
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="iconProfile">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="height">30dp</item>
+        <item name="android:width">30dp</item>
+    </style>
+</resources>
